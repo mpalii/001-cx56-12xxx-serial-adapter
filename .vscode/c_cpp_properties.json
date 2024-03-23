@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "name": "AVR",
+            "includePath": [
+                "/lib/avr/include/**"
+            ],
+            "defines": [
+                "__AVR_ATmega328P__",
+                "COMMON_CATHODE_MODE"
+            ],
+            "cStandard": "c11"
+        }
+    ],
+    "version": 4
+}
