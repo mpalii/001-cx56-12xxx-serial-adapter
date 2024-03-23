@@ -17,7 +17,7 @@ void init_timer_0(void);
 volatile uint32_t system_time = 0;
 
 // Task 1
-#define T1 125
+#define T1 2
 void task_1(void);
 volatile uint8_t time1;
 

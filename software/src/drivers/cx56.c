@@ -50,7 +50,7 @@ void render(uint16_t number)
 
     // Shift digit related byte
     uint8_t digit_byte = DIGIT_MASKS[current_digit];
-    for (uint8_t i = 0; i < 8; i++)
+    for (int8_t i = 7; i >= 0; i--)
     {
         GPIO_LOW(SRCLK);
 
@@ -74,7 +74,7 @@ void render(uint16_t number)
         mapped_number |= 1 << 7;
     }
 
-    for (uint8_t i = 0; i < 8; i++)
+    for (int8_t i = 7; i >= 0; i--)
     {
         GPIO_LOW(SRCLK);
 
